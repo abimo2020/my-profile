@@ -341,3 +341,9 @@ footer .social-media-list li a {
 		max-width: 80%;
 	}
 }
+
+@media screen and (max-width: 382px) {
+	main .content #profile {
+		margin-top: 150px;
+	}
+}
