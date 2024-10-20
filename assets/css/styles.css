@@ -134,7 +134,7 @@ main .education-list {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	max-width: 1000px;
+	max-width: 85%;
 	margin-inline: auto;
 	text-align: center;
 }
@@ -336,5 +336,6 @@ footer .social-media-list li a {
 	}
 	main .education-list .education-item {
 		padding-inline: 20px;
+		max-width: 80%;
 	}
 }
