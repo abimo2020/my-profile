@@ -38,6 +38,11 @@ header.nav-container {
 	z-index: 9999;
 }
 
+header.nav-container .nav-title {
+	display: flex;
+	flex-direction: column;
+}
+
 header.nav-container .nav-title h1 {
 	font-size: 1.7rem;
 	font-weight: 1000;
@@ -313,17 +318,18 @@ footer .social-media-list li a {
 		gap: 5px;
 		padding-block: 7px;
 	}
-	.nav-title {
-		display: flex;
+	header.nav-container .nav-title {
+		flex-direction: row;
 		gap: 20px;
 		align-items: center;
 	}
+
 	header.nav-container .nav-list ul {
 		flex-direction: row;
 		padding-inline-start: 0;
 		line-height: 1;
 		padding-block: 0;
-		gap: 1rem;
+		gap: 1.5rem;
 		justify-content: center;
 	}
 
@@ -331,6 +337,7 @@ footer .social-media-list li a {
 		flex-direction: column;
 		text-align: center;
 	}
+
 	main .education-list {
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -340,10 +347,22 @@ footer .social-media-list li a {
 		padding-inline: 20px;
 		max-width: 80%;
 	}
+	aside .skill-list img {
+		height: 60px;
+	}
 }
 
 @media screen and (max-width: 382px) {
 	main .content #profile {
 		margin-top: 150px;
+	}
+	header.nav-container .nav-title h1 {
+		flex: 2;
+	}
+	header.nav-container .nav-title h2 {
+		flex: 1;
+	}
+	.experience-description .description-list ul {
+		padding-left: 20px;
 	}
 }
