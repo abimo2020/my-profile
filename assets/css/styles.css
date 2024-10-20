@@ -58,7 +58,7 @@ header.nav-container .nav-title h2 {
 
 header.nav-container .nav-list ul {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	gap: 5rem;
 }
 
@@ -318,11 +318,13 @@ footer .social-media-list li a {
 		gap: 20px;
 		align-items: center;
 	}
-	.nav-list ul {
+	header.nav-container .nav-list ul {
 		flex-direction: row;
 		padding-inline-start: 0;
 		line-height: 1;
 		padding-block: 0;
+		gap: 1rem;
+		justify-content: center;
 	}
 
 	main .content #profile {
